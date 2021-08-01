@@ -40,5 +40,7 @@ const IntroContainer=styled.section`
 display: flex;
   flex-wrap: wrap;
 justify-content :center;
-
+padding: 6.25rem 0;
+margin: 0 auto;
+background:#eee;
 `

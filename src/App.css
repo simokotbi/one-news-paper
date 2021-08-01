@@ -12,20 +12,23 @@ body {
 
 .container {
     max-width: 65em;
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
 }
 .col {
-    
     flex: 0 0 100%;
-    padding: 0 .75em; }
-    .col-1-2 {
-        flex-basis: 50%;
-     } 
+    padding: 0 .75em;
+ }
+     
+     @media (min-width: 725px) {
+        .col-1-2 {
+          flex-basis: 50%; }
+          
+        }
 
      .subscription{
          margin: 26.7px 0;
-         text-align: right;
+         text-align: center;
          
      }
      .email-input{
@@ -68,8 +71,8 @@ body {
         width: 100%;
      }
      .email{
-        width: 240px;
-        max-width: 100%;
+       width:240px;
+      
         text-align: center;
         margin: auto;
         -webkit-transition: border-bottom-color 100ms ease-in,color 100ms ease-in;
@@ -142,10 +145,8 @@ body {
         line-height: 1.2;
         text-align: left;
         margin-bottom: 0.8rem;
+        
      }
 
 
-     @media (min-width: 725px) {
-        .col-1-2 {
-          flex-basis: 50%; }
-         }
+    
