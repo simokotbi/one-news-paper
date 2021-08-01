@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+* {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Signika', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    max-width: 65em;
+    width: 85%;
+    margin: 0 auto;
 }
+.col {
+    
+    flex: 0 0 100%;
+    padding: 0 .75em; }
+    .col-1-2 {
+        flex-basis: 50%;
+     } 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+     .subscription{
+         margin: 26.7px 0;
+         text-align: right;
+         
+     }
+     .email-input{
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        box-sizing: border-box;
+        color: #000;
+        display: block;
+        text-align: left;
+        font-size: 14px;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        padding: 4px 0;
+        margin: 0 auto;
+        height: 37px;
+        line-height: 27px;
+        width: 100%;
+        box-shadow: none;
 
-.App-link {
-  color: #61dafb;
-}
+     }
+     .submit-btn{
+         display: block;
+     }
+     form{
+         display: inline-block;
+     }
+     label{
+        background-color: transparent;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        border-radius: 8px;
+        border: 1px solid #999;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+     }
+     .email{
+        width: 240px;
+        max-width: 100%;
+        text-align: center;
+        margin: auto;
+        -webkit-transition: border-bottom-color 100ms ease-in,color 100ms ease-in;
+        transition: border-bottom-color 100ms ease-in,color 100ms ease-in;
+        
+     }
+     .icon{
+        margin: 0 14px;
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        align-items: center
+     }
+     .input{
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        height: 37px;
+        line-height: 37px;
+     }
+     .btn{
+        position: relative;
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        cursor: pointer;
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        padding: 0.25rem 0.5rem;
+        margin: -0.25rem -0.5rem;
+        border-radius: 7px;
+        color: #0070f3;
+        background-color: transparent;
+        border: none;
+        font-size: inherit;
+        line-height: inherit;
+        -webkit-transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
+        transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
+        outline: none;
+     }
+     .submit-btn{
+        height: 45px;
+        margin: 10px 0;
+        margin-bottom: 0;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 500;
+        width: 100%;
+        background-color: #000;
+        color: #fff;
+        border: 1px solid #000;
+        
+     }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+     .description h2{
+        font-size: 2rem;
+        -webkit-letter-spacing: -1px;
+        -moz-letter-spacing: -1px;
+        -ms-letter-spacing: -1px;
+        letter-spacing: -1px;
+        line-height: 1.2;
+        text-align: left;
+        margin-bottom: 0.8rem;
+     }
+
+
+     @media (min-width: 725px) {
+        .col-1-2 {
+          flex-basis: 50%; }
+         }
