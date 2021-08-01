@@ -42,5 +42,5 @@ display: flex;
 justify-content :center;
 padding: 6.25rem 0;
 margin: 0 auto;
-background:#eee;
+background:#fff;
 `
